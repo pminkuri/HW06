@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/frameLayout4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.HW06.NewForumFragment" >
+
+    <EditText
+        android:id="@+id/newTitle"
+        android:layout_width="326dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Forum Title"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/newDesc"
+        android:layout_width="326dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Forum Desc"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/newTitle"
+        app:layout_constraintTop_toBottomOf="@+id/newTitle" />
+
+    <Button
+        android:id="@+id/buttonCreate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Submit"
+        app:layout_constraintEnd_toEndOf="@+id/newDesc"
+        app:layout_constraintStart_toStartOf="@+id/newDesc"
+        app:layout_constraintTop_toBottomOf="@+id/newDesc" />
+
+    <TextView
+        android:id="@+id/tvNewCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/Cancel"
+        app:layout_constraintEnd_toEndOf="@+id/buttonCreate"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCreate" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
